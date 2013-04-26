@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WebsiteAlive
+Plugin Name: WebsiteAlive Live Chat
 Plugin URI: 
-Description: This plugin adds WebsiteAlive Embedded Icon/Tracking Code in the footer section of your Wordpress site.
+Description: AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.This plugin adds your AliveChat Embedded Icon/Tracking Code in the footer section of your Wordpress site.
 Version: 1.0
 Author: AYU Technology Solutions, LLC
-Author URI: 
+Author URI: http://www.websitealive.com
 License: no.
 */
 
