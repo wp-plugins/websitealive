@@ -14,9 +14,7 @@ Click here -> <a href="http://www.websitealive.com/refer/?promocode=promosales-5
 Take a tour and see how cool it would be to have AliveChat on your website:
 http://www.websitealive.com/web-chat-software/
 
-Still have questions? <!-- Start WebsiteAlive Text Code ID: 1045 -->
-<a href="javascript:void(0)" onclick="window.open('https://www.websitealive3.com/9/visitor/window/?code_id=1045&dl='+escape(document.location.href),'wsa_9_10','height=200,width=200')"/>Let's Chat</a>
-<!-- End WebsiteAlive Text Code -->
+Still have questions? <a href="https://www.websitealive3.com/9/operator/guest/gDefault_v2.asp?cframe=login&chattype=normal&groupid=9&websiteid=10&departmentid=0&sessionid_=290741&iniframe=&ppc_id=&autostart=&text2chat_info=&loginname=&loginnamelast=&loginemail=&loginphone=&infocapture_ids=&infocapture_values=&dl=http%3Awww.websitealive.com&loginquestion=">LET'S CHAT</a> 
 == Installation ==
 
 1. Download wordpress-wsa.zip to your computer.
