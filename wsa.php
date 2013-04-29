@@ -76,11 +76,17 @@ if ( !class_exists( 'WebsiteAlive' ) ) {
 <div id="ichat-wrap">
 <div class="wrap">
 <?php screen_icon(); ?>
-<h2>WebsiteAlive - Options</h2>
+<h2>WebsiteAlive for Wordpress - AliveChat Options</h2>
 <div class="ichat-wrap">
 <form name="dofollow" action="options.php" method="post">
 <?php settings_fields( 'websitealive' ); ?>
-<label class="ichat-labels footerlabel" for="ichat_insert_footer">Please enter the proper values in the fields. More information can be found within your WebsiteAlive account:</label>
+<label class="ichat-labels footerlabel" for="ichat_insert_footer">If you are a current AliveChat client, please enter the proper account values in the fields below. The values can be found within your WebsiteAlive account
+Click here to login: <a href="http://www.websitealive.com/">My Account</a> </label>
+<br></br>
+If you do not have an existing AliveChat account? No problem, we will be happy to give you a free 10 day test drive. Get AliveChat now -><a href="http://www.websitealive.com/refer/?promocode=promosales-528&page=trial">SIGN UP</a> 
+<br></br>
+Input your account information below to install AliveChat on your Wordpress site
+<br></br>
 <span>objectref:</span>	<input type="text" id="wsa_objectref" name="wsa_objectref" value="<?php echo esc_html( get_option( 'wsa_objectref' ) ); ?>" /><br />
 <span>groupid: </span>	<input type="text" id="wsa_groupid" name="wsa_groupid" value="<?php echo esc_html( get_option( 'wsa_groupid' ) ); ?>" /><br />
 <span>websiteid:</span>	<input type="text" id="wsa_websiteid" name="wsa_websiteid" value="<?php echo esc_html( get_option( 'wsa_websiteid' ) ); ?>" /><br />
