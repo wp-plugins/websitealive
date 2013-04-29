@@ -6,8 +6,13 @@ Tested up to: 3.5.1
 Stable tag: 1.0
 
 == Description ==
-AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.This plugin adds your AliveChat Embedded Icon/Tracking Code in the footer section of your Wordpress site.
+AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.This plugin adds your current AliveChat Embedded Icon/Tracking Code in the footer section of your Wordpress site.
 
+Don't have a AliveChat account yet? No problem, we will be happy to give you a free 10 day trial!
+click here -> <a href="http://www.websitealive.com/refer/?promocode=promosales-528&page=trial">SIGN UP</a> 
+
+Take a tour and see how cool it would be to have AliveChat on your website:
+http://www.websitealive.com/web-chat-software/
 == Installation ==
 
 1. Download wordpress-wsa.zip to your computer.
