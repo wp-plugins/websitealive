@@ -83,7 +83,7 @@ if ( !class_exists( 'WebsiteAlive' ) ) {
 <label class="ichat-labels footerlabel" for="ichat_insert_footer">If you are a current AliveChat client, please enter the proper account values in the fields below. The values can be found within your WebsiteAlive account
 Click here to login: <a href="http://www.websitealive.com/">My Account</a> </label>
 <br></br>
-If you do not have an existing AliveChat account? No problem, we will be happy to give you a free 10 day test drive. Get AliveChat now -><a href="http://www.websitealive.com/refer/?promocode=promosales-528&page=trial">SIGN UP</a> 
+If you do not have an existing AliveChat account? No problem, we will be happy to give you a free 10 day test drive! Get AliveChat now -><a href="http://www.websitealive.com/refer/?promocode=promosales-528&page=trial">SIGN UP</a> 
 <br></br>
 Input your account information below to install AliveChat on your Wordpress site
 <br></br>
