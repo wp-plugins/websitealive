@@ -3,7 +3,7 @@ Contributors: AYU Technology Solutions, LLC
 Tags: live chat, chat, click-to-call, footer, footers, content, alivechat, alivedial
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 == Description ==
 AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.This plugin adds your current AliveChat Embedded Icon/Tracking Code in the footer section of your Wordpress site.
