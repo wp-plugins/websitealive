@@ -1,10 +1,10 @@
 <?php  
 /* 
 Plugin Name: WebsiteAlive Plugin
-Plugin URI: http://www.wwebsitealive.com/ 
-Version: 0.1
-Author: Manuel Olmos Gil
-Description: Live Chat Plugin
+Plugin URI: http://www.websitealive.com/ 
+Version: 1.1
+Author: AYU Technology Solutions, LLC
+Description: AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.
 */  
 
 register_activation_hook(__FILE__,'gmp_install');
