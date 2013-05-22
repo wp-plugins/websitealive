@@ -1,7 +1,7 @@
 <?php  
 /* 
-Plugin Name: WebSitealive Plugin
-Plugin URI: http://www.yourpluginurlhere.com/ 
+Plugin Name: WebsiteAlive Plugin
+Plugin URI: http://www.wwebsitealive.com/ 
 Version: 0.1
 Author: Manuel Olmos Gil
 Description: Live Chat Plugin
