@@ -1,4 +1,3 @@
-
 	var wsa_username, wsa_server_url, wsa_objectref, wsa_groupid, wsa_websiteid;
 
 
@@ -67,8 +66,12 @@
 				
 				$('#websiteid').empty();
 				for (var i = 0; i < data.length; i++) {
-								 
-					$('#websiteid').append($("<option />").val(data[i].websiteid).text(data[i].title));
+					
+					if (data[i].websiteid == $('#wsa_websiteid').val()){	
+						$('#websiteid').append($("<option selected/>").val(data[i].websiteid).text(data[i].title));
+					}else{		 
+						$('#websiteid').append($("<option />").val(data[i].websiteid).text(data[i].title));
+					}
 				}
 				
 			});
@@ -103,7 +106,7 @@
 					//$('#div_wp_login').hide();
 					//$('#div_wp_config').show();
 					
-					alert('Success! wsa_server_url=' + wsa_server_url + ',wsa_groupid=' + wsa_groupid); 
+					//alert('Success! wsa_server_url=' + wsa_server_url + ',wsa_groupid=' + wsa_groupid); 
 					
 					$('#div_wp_login').hide();
 					$('#div_wp_config').show();
@@ -140,10 +143,13 @@
 
 					$('#wsa_objectref').val(data[0].objectref); 
 					$('#wsa_groupid').val(data[0].groupid);
+					$('#wsa_password').val(data[0].password);
 					$('#wsa_username').val($('#reg_username').val());
 					$('#span_user_name').html($('#reg_username').val());
 					
 					//send reg email here.
+
+					register_sendEmail();
 
 
 					$("#div_wp_register").hide();
@@ -160,6 +166,7 @@
 	
 	function saveWebsite(){
 		wsa_updateWP($('#wsa_username').val(),$('#wsa_groupid').val(), $('#wsa_objectref').val(), $('#websiteid').val());
+		alert('Settings Saved! Now, just log into your WebsiteAlive Operator account (check your email for account information) and reload your Wordpress site. You should see a WebsiteAlive icon appear at the bottom right.');
 	}
 	function logOut(){
 		wsa_updateWP("","","","");
@@ -173,3 +180,46 @@
 		$('#wsa_websiteid').val(wsa_websiteid);
 		$('#dofollow').submit();
 	}
+
+
+
+
+	function register_sendEmail(){
+		
+		 $.ajax
+			({
+				type: "POST",
+				url: 'http://api-v1.websitealive.com/email/',
+				//contentType : 'application/json',
+				dataType: 'json',
+				
+				//json object to sent to the authentication url
+				headers: {
+					//Authorization: 'token ' + $('#DIVaccessToken').html()
+				},
+				data: {
+					
+					action: 'sendemail_registration',
+					objectref: 		$('#wsa_objectref').val(),
+					groupid:		$('#wsa_groupid').val(),
+					first_name: 		$('#wsa_username').val(), 
+					username: 		$('#wsa_username').val(),
+					password: 		$('#wsa_password').val(),
+					trial_days: 	30,
+					email_to:		$('#reg_emailadmin').val(),
+					email_from: 	"outbox@websitealive.com",
+					email_replyto:	"vip@websitealive.com",
+					format:			'json'
+					
+				},
+				
+				
+			}).then(function (data) {
+				
+				
+				
+			});
+		
+		
+	}
+	

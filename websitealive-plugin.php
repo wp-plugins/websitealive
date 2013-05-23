@@ -1,10 +1,10 @@
 <?php  
 /* 
-Plugin Name: WebsiteAlive AliveChat Plugin
+Plugin Name: WebsiteAlive
 Plugin URI: http://www.websitealive.com/ 
-Version: 1.1
-Author: AYU Technology Solutions, LLC
-Description: AliveChat is the easy-to-use Live Chat solution for your Wordpress website. Visitors can immediately chat with someone at your company who can answer all their questions, all in real time.
+Version: 1.2
+Author: AYU Technology Solutions LLC
+Description: WebsiteAlive is the easy-to-use Live Chat/Click-To-Call solution for your Wordpress website. Visitors can immediately chat or initiate a click-to-call session with someone at your company who can answer their questions, in real-time. This Wordpress plug-in instantly updates your Wordpress site with WebsiteAlive Tracking Code which tracks visitors in real-time and also displays a call-to-action icon.
 */  
 
 register_activation_hook(__FILE__,'gmp_install');
@@ -22,7 +22,7 @@ function gmp_install() {
 if ( !class_exists( 'WebsiteAlive' ) ) {
 	
 	define('WSAURL',    plugins_url('', __FILE__));
-	wp_register_style('WSAStyleSheet', WSAURL . '/wsa.css');
+	wp_register_style('WSAStyleSheet', WSAURL . '/css/wsa.css');
     wp_enqueue_style( 'WSAStyleSheet');
 	
 	class WSA {
@@ -81,7 +81,7 @@ if ( !class_exists( 'WebsiteAlive' ) ) {
 function options_panel() {
 ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="../wp-content/plugins/websitealive-plugin/js/websitealive-plugin.js"></script>
+<script src="../wp-content/plugins/websitealive/js/websitealive-plugin.js"></script>
 
 <?php include 'html/user_settings.php'; ?>
 <?php include 'html/header.php'; ?>

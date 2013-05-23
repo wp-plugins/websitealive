@@ -13,7 +13,7 @@
         <td><input type="text" id="user_name" value=""/></td>
       </tr>
       <tr>
-        <td class="aRight"><p class="fs16">Password:</p></td>
+        <td class="aRight"><p>Password:</p></td>
         <td><input type="password" id="password" value=""/><br />
         	
         </td>
