@@ -1,6 +1,6 @@
 <?php  
 /* 
-Plugin Name: WebsiteAlive Plugin
+Plugin Name: WebsiteAlive AliveChat Plugin
 Plugin URI: http://www.websitealive.com/ 
 Version: 1.1
 Author: AYU Technology Solutions, LLC
