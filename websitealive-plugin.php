@@ -22,9 +22,12 @@ function gmp_install() {
 if ( !class_exists( 'WebsiteAlive' ) ) {
 	
 	define('WSAURL',    plugins_url('', __FILE__));
-	wp_register_style('WSAStyleSheet', WSAURL . '/css/wsa.css');
-    wp_enqueue_style( 'WSAStyleSheet');
-	
+
+	if(strpos(WSAURL, 'wp-admin')){
+		wp_register_style('WSAStyleSheet', WSAURL . '/css/wsa.css');
+    		wp_enqueue_style( 'WSAStyleSheet');
+	}
+
 	class WSA {
 
 		function WSA() {
