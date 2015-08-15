@@ -122,11 +122,11 @@
 
 	function register(){
 		
-		if (!(validateEmail($('#reg_emailadmin').val()) && $('#reg_emailadmin').val() != '' && validateText($('#reg_username').val(),6))){ 
+		if (!(validateEmail($('#reg_emailadmin').val().trim()) && $('#reg_emailadmin').val().trim() != '' && validateText($('#reg_username').val().trim(),6))){ 
 			alert('Please enter a valid username and email.');
 		}else{
 		   
-			$.getJSON('http://secure.websitealive.com/apps/signup/signup_api.asp?format=json&username=' + $('#reg_username').val() + '&emailadmin=' + $('#reg_emailadmin').val() + '&promocode=wordpress5&confirmemail=Y&version=pro2', {}, function (data) {
+			$.getJSON('http://secure.websitealive.com/apps/signup/signup_api.asp?format=json&username=' + $('#reg_username').val().trim() + '&emailadmin=' + $('#reg_emailadmin').val().trim() + '&promocode=wordpress5&confirmemail=Y&version=pro2', {}, function (data) {
 						
 				if (data[0].responseType == 'error'){
 					alert(data[0].errorMessage);
@@ -165,7 +165,7 @@
 	}
 	
 	function saveWebsite(){
-		wsa_updateWP($('#wsa_username').val(),$('#wsa_groupid').val(), $('#wsa_objectref').val(), $('#websiteid').val());
+		wsa_updateWP($('#wsa_username').val().trim(),$('#wsa_groupid').val(), $('#wsa_objectref').val(), $('#websiteid').val());
 		alert('Settings Saved! Now, just log into your WebsiteAlive Operator account (check your email for account information) and reload your Wordpress site. You should see a WebsiteAlive icon appear at the bottom right.');
 	}
 	function logOut(){
@@ -202,11 +202,11 @@
 					action: 'sendemail_registration',
 					objectref: 		$('#wsa_objectref').val(),
 					groupid:		$('#wsa_groupid').val(),
-					first_name: 		$('#wsa_username').val(), 
-					username: 		$('#wsa_username').val(),
+					first_name: 		$('#wsa_username').val().trim(), 
+					username: 		$('#wsa_username').val().trim(),
 					password: 		$('#wsa_password').val(),
 					trial_days: 	30,
-					email_to:		$('#reg_emailadmin').val(),
+					email_to:		$('#reg_emailadmin').val().trim(),
 					email_from: 	"outbox@websitealive.com",
 					email_replyto:	"vip@websitealive.com",
 					format:			'json'
