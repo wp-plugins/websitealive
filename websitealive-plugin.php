@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WebsiteAlive
 Plugin URI: http://www.websitealive.com/ 
-Version: 1.2
+Version: 1.3
 Author: AYU Technology Solutions LLC
 Description: WebsiteAlive is the easy-to-use Live Chat/Click-To-Call solution for your Wordpress website. Visitors can immediately chat or initiate a click-to-call session with someone at your company who can answer their questions, in real-time. This Wordpress plug-in instantly updates your Wordpress site with WebsiteAlive Tracking Code which tracks visitors in real-time and also displays a call-to-action icon.
 */  
